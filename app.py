@@ -155,7 +155,7 @@ class Database:
 # ======================
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
-db = Database(uri='bolt://localhost:7687', user='e5b3b8fe', password='ho4Uwh5vlZjVaaGrAqCg7BEZt1MEFfG1sQBlGVBvptU')
+db = Database(uri='neo4j+s://e5b3b8fe.databases.neo4j.io', user='e5b3b8fe', password='ho4Uwh5vlZjVaaGrAqCg7BEZt1MEFfG1sQBlGVBvptU')
 
 # Sample data initialization
 with app.app_context():
